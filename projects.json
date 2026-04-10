@@ -1,31 +1,31 @@
 [
-  {
-    "titre": "Site Escape Game dynamique",
-    "description": "Site vitrine pour un escape game dont le contenu est chargé dynamiquement via une API JSON avec JavaScript (fetch, création d'éléments DOM).",
-    "tags": ["JS", "HTML", "CSS"],
-    "image": "assets/previewEscapeGameJS.png",
-    "lien": "https://etsuee.github.io/renduJavaScript/"
-  },
-  {
-    "titre": "Site vitrine Studio Aline Graphik",
-    "description": "Site vitrine pour un studio de design graphique avec sections services, réalisations et témoignages clients. Mise en page soignée en HTML/CSS pur.",
-    "tags": ["HTML", "CSS"],
-    "image": "assets/previewRenduPortfolio.png",
-    "lien": "https://etsuee.github.io/renduPortfolio/"
-  },
-  {
-    "titre": "Application Partage",
-    "description": "Landing page et documentation pour une application mobile de prêt et d'emprunt d'objets entre particuliers.",
-    "tags": ["JS", "HTML", "CSS"],
-    "image": "assets/previewAppPartage.png",
-    "lien": "https://etsuee.github.io/ProjetPartage/"
-  },
-  {
-  "titre": "Jointin",
-  "description": "Application web style Linktree développée en stage. Centralise tous les liens d'un utilisateur en une seule page.",
-  "tags": ["JS", "HTML", "CSS", "Node.js"],
-  "image": "assets/previewJointin.png",
-  "lien": "",
-  "encours": true
-}
+    {
+        "titre": "Jointin",
+        "description": "Application web style Linktree développée en stage. Centralise tous les liens d'un utilisateur en une seule page.",
+        "tags": ["JS", "HTML", "CSS", "Node.js"],
+        "image": "assets/previewJointin.png",
+        "lien": "",
+        "encours": true
+    },
+    {
+        "titre": "Application Partage",
+        "description": "Landing page et documentation pour une application mobile de prêt et d'emprunt d'objets entre particuliers.",
+        "tags": ["JS", "HTML", "CSS"],
+        "image": "assets/previewAppPartage.png",
+        "lien": "https://etsuee.github.io/ProjetPartage/"
+    },
+    {
+        "titre": "Site vitrine Studio Aline Graphik",
+        "description": "Site vitrine pour un studio de design graphique avec sections services, réalisations et témoignages clients. Mise en page soignée en HTML/CSS pur.",
+        "tags": ["HTML", "CSS"],
+        "image": "assets/previewRenduPortfolio.png",
+        "lien": "https://etsuee.github.io/renduPortfolio/"
+    },
+    {
+        "titre": "Site Escape Game dynamique",
+        "description": "Site vitrine pour un escape game dont le contenu est chargé dynamiquement via une API JSON avec JavaScript (fetch, création d'éléments DOM).",
+        "tags": ["JS", "HTML", "CSS"],
+        "image": "assets/previewEscapeGameJS.png",
+        "lien": "https://etsuee.github.io/renduJavaScript/"
+    }
 ]
