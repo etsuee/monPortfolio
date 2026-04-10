@@ -19,5 +19,13 @@
     "tags": ["JS", "HTML", "CSS"],
     "image": "assets/previewAppPartage.png",
     "lien": "https://etsuee.github.io/ProjetPartage/"
-  }
+  },
+  {
+  "titre": "Jointin",
+  "description": "Application web style Linktree développée en stage. Centralise tous les liens d'un utilisateur en une seule page.",
+  "tags": ["JS", "HTML", "CSS", "Node.js"],
+  "image": "assets/previewJointin.png",
+  "lien": "",
+  "encours": true
+}
 ]

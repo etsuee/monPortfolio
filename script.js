@@ -5,16 +5,23 @@ fetch('projects.json')
 
     projets.forEach(projet => {
       const tags = projet.tags.map(tag => `<span class="tag">${tag}</span>`).join('');
+      const badgeEncours = projet.encours ? `<span class="badge-encours">🚧 En cours</span>` : '';
+      const lien = projet.lien 
+        ? `<a href="${projet.lien}" target="_blank">Voir le projet →</a>` 
+        : `<span class="bientot">Lien bientôt disponible</span>`;
 
       const card = document.createElement('div');
       card.className = 'projet-card';
       card.innerHTML = `
-        <img src="${projet.image}" alt="${projet.titre}" class="projet-img">
+        <div class="projet-img-wrapper">
+          <img src="${projet.image}" alt="${projet.titre}" class="projet-img" onerror="this.outerHTML='<div class=\\'no-img\\'>🔗</div>'">
+          ${badgeEncours}
+        </div>
         <div class="projet-card-body">
           <div class="projet-tags">${tags}</div>
           <h3>${projet.titre}</h3>
           <p>${projet.description}</p>
-          <a href="${projet.lien}" target="_blank">Voir le projet →</a>
+          ${lien}
         </div>
       `;
 
@@ -22,9 +29,10 @@ fetch('projects.json')
     });
   });
 
+
   const textes = [
   "Développeur web en formation",
-  "Étudiant en Bachelor 3",
+  "Étudiant en Bachelor 3 à Epitech Lyon",
   "En recherche d'alternance"
 ];
 
