@@ -4,7 +4,7 @@
         "description": "Application web style Linktree développée en stage. Centralise tous les liens d'un utilisateur en une seule page.",
         "tags": ["JS", "HTML", "CSS", "Node.js"],
         "image": "assets/previewJointin.png",
-        "lien": "",
+        "lien": "https://jointin.onrender.com",
         "encours": true
     },
     {
