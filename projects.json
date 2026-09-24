@@ -4,16 +4,14 @@
     "description": "Application web style Linktree développée en stage. Centralise tous les liens d'un utilisateur en une seule page.",
     "tags": ["JS", "HTML", "CSS", "Node.js"],
     "image": "assets/previewJointin.png",
-    "lien": "https://jointin.onrender.com",
-    "encours": false
+    "lien": "https://jointin.onrender.com"
   },
   {
     "titre": "JV Game Jam",
     "description": "Petit jeu-vidéo conçu lors d'une game jam de 2 jours dans une équipe de 2 personnes",
     "tags": ["C#", "Unity"],
-    "image": "#",
-    "lien": "https://etsuee.github.io/GameJamDemo/",
-    "encours": true
+    "image": "assets/gardenPerilStartScreen.png",
+    "lien": "https://etsuee.github.io/GameJamDemo/"
   },
   {
     "titre": "Application Partage",
