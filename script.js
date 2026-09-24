@@ -1,17 +1,21 @@
-fetch('projects.json')
-  .then(response => response.json())
-  .then(projets => {
-    const grid = document.getElementById('projets-grid');
+fetch("projects.json")
+  .then((response) => response.json())
+  .then((projets) => {
+    const grid = document.getElementById("projets-grid");
 
-    projets.forEach(projet => {
-      const tags = projet.tags.map(tag => `<span class="tag">${tag}</span>`).join('');
-      const badgeEncours = projet.encours ? `<span class="badge-encours">🚧 En cours</span>` : '';
-      const lien = projet.lien 
-        ? `<a href="${projet.lien}" target="_blank">Voir le projet →</a>` 
+    projets.forEach((projet) => {
+      const tags = projet.tags
+        .map((tag) => `<span class="tag">${tag}</span>`)
+        .join("");
+      const badgeEncours = projet.encours
+        ? `<span class="badge-encours">🚧 En cours</span>`
+        : "";
+      const lien = projet.lien
+        ? `<a href="${projet.lien}" target="_blank">Voir le projet →</a>`
         : `<span class="bientot">Lien bientôt disponible</span>`;
 
-      const card = document.createElement('div');
-      card.className = 'projet-card';
+      const card = document.createElement("div");
+      card.className = "projet-card";
       card.innerHTML = `
         <div class="projet-img-wrapper">
           <img src="${projet.image}" alt="${projet.titre}" class="projet-img" onerror="this.outerHTML='<div class=\\'no-img\\'>🔗</div>'">
@@ -29,14 +33,7 @@ fetch('projects.json')
     });
   });
 
-
-  const textes = [
-  "Développeur web en formation",
-  "Étudiant en Bachelor 3 à Epitech Lyon",
-  "En recherche d'alternance"
-];
-
-
+const textes = ["Développeur web en formation", "Stagiare à M2I Lyon"];
 
 let indexTexte = 0;
 let indexLettre = 0;
@@ -71,10 +68,11 @@ function ecrire() {
 
 ecrire();
 
+const toggle = document.getElementById("theme-toggle");
 
-const toggle = document.getElementById('theme-toggle');
-
-toggle.addEventListener('click', () => {
-  document.documentElement.classList.toggle('light');
-  toggle.textContent = document.documentElement.classList.contains('light') ? '☀️' : '🌙';
+toggle.addEventListener("click", () => {
+  document.documentElement.classList.toggle("light");
+  toggle.textContent = document.documentElement.classList.contains("light")
+    ? "☀️"
+    : "🌙";
 });
