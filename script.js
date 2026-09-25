@@ -33,7 +33,7 @@ fetch("projects.json")
     });
   });
 
-const textes = ["Développeur web en formation", "Stagiare à M2I Lyon"];
+const textes = ["Développeur web junior", "Stagiare à M2I Lyon"];
 
 let indexTexte = 0;
 let indexLettre = 0;
